@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
-
+cat <<EOL 
+   ____         __       ____     __  _         
+  /  _/__  ___ / /____ _/ / /__ _/ /_(_)__  ___ 
+ _/ // _ \(_-</ __/ _ `/ / / _ `/ __/ / _ \/ _ \
+/___/_//_/___/\__/\_,_/_/_/\_,_/\__/_/\___/_//_/
+                                                
+EOL
 echo "Detecting package manager..."
 
 if command -v pacman &> /dev/null; then
@@ -46,7 +52,7 @@ elif [ "$PM" = "zypper" ]; then
   $INSTALL xwinwrap mpv ffmpeg feh ImageMagick xdotool socat
 fi
 
-echo "Installation complete."
+echo "Installation complete"
 
 echo "Note: On some distros, xwinwrap may not be available in repos."
 echo "If missing, consider building it from source: https://github.com/mmhobi7/xwinwrap"
