@@ -43,6 +43,12 @@ while getopts ":anwbf:d:h" arg; do
   "h")
     cat <<EOL
 Usage:
+  _      __                          
+ | | /| / /_____ _____  ___  ___ ____
+ | |/ |/ / __/ // / _ \/ _ \/ -_) __/
+ |__/|__/_/  \_,_/_//_/_//_/\__/_/   
+                                     
+
 ./setup.sh [OPTIONS] [VIDEO,BLUR_GEOMETRY,TIME_STAMP]
 
 Example:
